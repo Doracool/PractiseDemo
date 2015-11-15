@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>shenjingbing</string>
+		<key>desc</key>
+		<string>我们是一窝神经病</string>
+		<key>detail</key>
+		<string>http://weiwuhui.baijia.baidu.com/article/151945</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>chuide</string>
+		<key>desc</key>
+		<string>别听他的，他是吹的</string>
+		<key>detail</key>
+		<string>http://www.ha.xinhuanet.com/hnxw/2015-08/29/c_1116411071.htm</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>dog</string>
+		<key>desc</key>
+		<string>傻逼，你咬着我手了！梦见吃啥呢？</string>
+		<key>detail</key>
+		<string>http://jiangsu.china.com.cn/html/ent/hot/2371635_1.html</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>huaiyun</string>
+		<key>desc</key>
+		<string>哥怀孕了，求高人指点...</string>
+		<key>detail</key>
+		<string>http://society.people.com.cn/n/2015/0829/c136657-27530243.html</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>juhua</string>
+		<key>desc</key>
+		<string>好一朵美丽的大菊花</string>
+		<key>detail</key>
+		<string>http://news.xinhuanet.com/fortune/2015-08/29/c_1116413638.htm</string>
+	</dict>
+</array>
+</plist>
