@@ -68,11 +68,10 @@
     //雪花飞翔的动画
     
     [UIImageView animateWithDuration:5*speed animations:^{
-        
         int x2 = round(random()%375);
         snow.frame = CGRectMake(x2, 667, 50*big, 50*big);
-    
-        
+    } completion:^(BOOL finished) {
+        [snow removeFromSuperview];
     }];
     [self.view addSubview:snow];
 
