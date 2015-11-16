@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -1665,7 +1665,7 @@
 				};
 			};
 			buildConfigurationList = CC1A6BF61BF878FA00E6ADA3 /* Build configuration list for PBXProject "Tom猫" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -2363,6 +2363,7 @@
 				CC1A6C201BF878FA00E6ADA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC1A6C211BF878FA00E6ADA3 /* Build configuration list for PBXNativeTarget "Tom猫Tests" */ = {
 			isa = XCConfigurationList;
@@ -2371,6 +2372,7 @@
 				CC1A6C231BF878FA00E6ADA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

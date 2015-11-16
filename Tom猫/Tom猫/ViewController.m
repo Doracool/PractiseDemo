@@ -10,7 +10,7 @@
 #import "Button.h"
 
 @interface ViewController ()
-
+@property(nonatomic,strong)UIImageView *imageView;
 @end
 
 @implementation ViewController
@@ -101,7 +101,6 @@
     
     Left.frame = CGRectMake(130, 600, 50, 50);
     
-//    Left.backgroundColor = [UIColor redColor];
     
     [self.view addSubview:Left];
     [Left addTarget:self action:@selector(LeftClick) forControlEvents:UIControlEventTouchUpInside];
@@ -137,169 +136,97 @@
 
 -(void)cymbalClick{
     
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:imageView];
-    NSMutableArray *array = [[NSMutableArray alloc]init];
-    for (int i = 0; i < 12; i++) {
-        NSString *path = [NSString stringWithFormat:@"cymbal_%02d.jpg",i];
-        UIImage *image =[UIImage imageNamed:path];
-        [array addObject:image];
-    }
-    
-    imageView.animationImages = array;
-    imageView.animationDuration = 3;
-    imageView.animationRepeatCount = 1;
-    [imageView startAnimating];
-    
-    
+    [self startAnimating:12 imagePicture:@"cymbal"];
 }
 
 -(void)drinkClick{
     
-    
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:imageView];
-    NSMutableArray *array = [[NSMutableArray alloc]init];
-    for (int i = 0; i < 80; i++) {
-        NSString *path = [NSString stringWithFormat:@"drink_%02d.jpg",i];
-        UIImage *image =[UIImage imageNamed:path];
-        [array addObject:image];
-    }
-    
-    imageView.animationImages = array;
-    imageView.animationDuration = 3;
-    imageView.animationRepeatCount = 1;
-    [imageView startAnimating];
-    
+    [self startAnimating:80 imagePicture:@"drink"];
 
-    
 }
 
 -(void)eatClick{
     
-    
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:imageView];
-    NSMutableArray *array = [[NSMutableArray alloc]init];
-    for (int i = 0; i < 39; i++) {
-        NSString *path = [NSString stringWithFormat:@"eat_%02d.jpg",i];
-        UIImage *image =[UIImage imageNamed:path];
-        [array addObject:image];
-    }
-    
-    imageView.animationImages = array;
-    imageView.animationDuration = 3;
-    imageView.animationRepeatCount = 1;
-    [imageView startAnimating];
-    
-
+    [self startAnimating:39 imagePicture:@"eat"];
+   
 }
 
 -(void)fartClick{
     
-    
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:imageView];
-    NSMutableArray *array = [[NSMutableArray alloc]init];
-    for (int i = 0; i < 27; i++) {
-        NSString *path = [NSString stringWithFormat:@"fart_%02d.jpg",i];
-        UIImage *image =[UIImage imageNamed:path];
-        [array addObject:image];
-    }
-    
-    imageView.animationImages = array;
-    imageView.animationDuration = 3;
-    imageView.animationRepeatCount = 1;
-    [imageView startAnimating];
-    
-
+    [self startAnimating:27 imagePicture:@"fart"];
+   
 }
 
 -(void)pieClick{
     
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:imageView];
-    NSMutableArray *array = [[NSMutableArray alloc]init];
-    for (int i = 0; i < 23; i++) {
-        NSString *path = [NSString stringWithFormat:@"pie_%02d.jpg",i];
-        UIImage *image =[UIImage imageNamed:path];
-        [array addObject:image];
-    }
-    
-    imageView.animationImages = array;
-    imageView.animationDuration = 3;
-    imageView.animationRepeatCount = 1;
-    [imageView startAnimating];
+    [self startAnimating:23 imagePicture:@"pie"];
     
 }
 
 -(void)scratchClick{
     
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:imageView];
-    NSMutableArray *array = [[NSMutableArray alloc]init];
-    for (int i = 0; i < 55; i++) {
-        NSString *path = [NSString stringWithFormat:@"scratch_%02d.jpg",i];
-        UIImage *image =[UIImage imageNamed:path];
-        [array addObject:image];
-    }
-    
-    imageView.animationImages = array;
-    imageView.animationDuration = 3;
-    imageView.animationRepeatCount = 1;
-    [imageView startAnimating];
+    [self startAnimating:55 imagePicture:@"scratch"];
     
 }
 
 -(void)LeftClick{
     
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:imageView];
-    NSMutableArray *array = [[NSMutableArray alloc]init];
-    for (int i = 0; i < 29; i++) {
-        NSString *path = [NSString stringWithFormat:@"footRight_%02d.jpg",i];
-        UIImage *image =[UIImage imageNamed:path];
-        [array addObject:image];
-    }
+    [self startAnimating:29 imagePicture:@"footRight"];
     
-    imageView.animationImages = array;
-    imageView.animationDuration = 3;
-    imageView.animationRepeatCount = 1;
-    [imageView startAnimating];
 }
 
 -(void)RightClick{
     
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:imageView];
-    NSMutableArray *array = [[NSMutableArray alloc]init];
-    for (int i = 0; i < 29; i++) {
-        NSString *path = [NSString stringWithFormat:@"footLeft_%02d.jpg",i];
-        UIImage *image =[UIImage imageNamed:path];
-        [array addObject:image];
-    }
-    
-    imageView.animationImages = array;
-    imageView.animationDuration = 3;
-    imageView.animationRepeatCount = 1;
-    [imageView startAnimating];
+    [self startAnimating:29 imagePicture:@"footLeft"];
+   
 }
 
 -(void)HeadClick{
     
+    [self startAnimating:80 imagePicture:@"knockout"];
+
+}
+
+//动画执行代码
+-(void)startAnimating:(int)count imagePicture:(NSString *)imagePicture
+{
+    
+    if (self.imageView.isAnimating) {
+        
+        return;
+    }
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
     [self.view addSubview:imageView];
     NSMutableArray *array = [[NSMutableArray alloc]init];
-    for (int i = 0; i < 80; i++) {
-        NSString *path = [NSString stringWithFormat:@"knockout_%02d.jpg",i];
-        UIImage *image =[UIImage imageNamed:path];
+    for (int i = 0; i < count; i++) {
+        NSString *imgCat = [NSString stringWithFormat:@"%@_%02d",imagePicture,i];
+//        UIImage *image =[UIImage imageNamed:path];
+//        [array addObject:image];
+        
+        NSString *path1 = [[NSBundle mainBundle] pathForResource:imgCat ofType:@"jpg"];
+        UIImage *image = [UIImage imageWithContentsOfFile:path1];
+        
         [array addObject:image];
     }
     
     imageView.animationImages = array;
-    imageView.animationDuration = 3;
+    imageView.animationDuration = 0.05*count;
     imageView.animationRepeatCount = 1;
     [imageView startAnimating];
+    
+#if 0
+    [NSTimer scheduledTimerWithTimeInterval:imageView.animationDuration target:self selector:@selector(clearMemory) userInfo:nil repeats:NO];
+#else
+    [imageView performSelector:@selector(setAnimationImages:) withObject:nil afterDelay:imageView.animationDuration];
+
+//    [imageView performSelector:@selector(clearMemory) withObject:nil afterDelay:imageView.animationDuration];
+
+#endif
+}
+
+-(void)clearMemory
+{
+    self.imageView.animationImages = nil;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
